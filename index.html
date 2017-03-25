@@ -5,12 +5,31 @@
   <meta charset="utf-8">
 
   <title>Design Lab</title>
+  <style>
+    .inventory-item{
+      height:75px;
+    }
+    .hidden{
+      display:none;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Design Lab</h1>
+  <h1>Sank's Design Lab</h1>
   <canvas id="canvas"></canvas>
   <input id="file-input" type="file">
+  <img src="images/nestldown-cottage.jpg" id="nestldown" style="display:none">
+  <h1>Inventory</h1>
+  <p>Click image to add</p>
+  <img src="images/chair1.jpeg" id="chair1" class="inventory-item">
+  <img src="images/chair1.jpeg" id="chair1-actual" class="hidden">
+  <img src="images/chair2.webp" id="chair2" class="inventory-item">
+  <img src="images/chair2.webp" id="chair2-actual" class="hidden">
+  <img src="images/sofa1.png" id="sofa1" class="inventory-item">
+  <img src="images/sofa1.png" id="sofa1-actual" class="hidden">
+  <img src="images/arbor.jpg" id="arbor" class="inventory-item">
+  <img src="images/arbor.jpg" id="arbor-actual" class="hidden">
   <script src="fabric.min.js"></script>
   <script src="design_lab.js"></script>
 </body>

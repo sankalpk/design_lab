@@ -5,32 +5,6 @@ canvasEl.style.border="solid 1px black";
 var canvas = new fabric.Canvas('canvas');
 canvas.setHeight(750);
 canvas.setWidth(1000);
-var rect = new fabric.Rect({
-  left: 100,
-  top: 100,
-  fill: 'red',
-  width: 100,
-  height: 100
-});
-
-// "add" rectangle onto canvas
-rect.set('lockScalingX', true);
-rect.set('lockScalingY', true);
-
-rect.set('cornerSize', 15);
-rect.set('cornerColor', 'blue');
-rect.setControlsVisibility({
-    mt: false,
-    mb: false,
-    ml: false,
-    mr: false,
-    tr: false,
-    tl: false,
-    br: false,
-    bl: false
-});
-rect.set('hasRotatingPoint', true);
-canvas.add(rect);
 
 function renderImage(file) {
 
@@ -60,6 +34,8 @@ function renderImage(file) {
         bl: false
     });
     imgInstance.set('hasRotatingPoint', true);
+    imgInstance.set('lockScalingX', true);
+    imgInstance.set('lockScalingY', true);
     imgInstance.filters.push(filter);
     imgInstance.applyFilters(canvas.renderAll.bind(canvas))
     canvas.add(imgInstance);

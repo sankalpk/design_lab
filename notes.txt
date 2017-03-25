@@ -1,0 +1,6 @@
+Upload Files locally
+Add to canvas
+Move files
+Set a clear background image
+Change background image of files so their opacity is 0 for a given color
+Maintain aspect ratio of images
